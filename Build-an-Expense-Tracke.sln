@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expense Tracker", "Expense Tracker\Expense Tracker.csproj", "{87CE0F1B-3FAB-4FDA-A5CD-6385208E13C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expense Tracker", "Expense Tracker\Expense Tracker.csproj", "{F91D6823-8326-4C03-8B50-97AA60678858}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{87CE0F1B-3FAB-4FDA-A5CD-6385208E13C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87CE0F1B-3FAB-4FDA-A5CD-6385208E13C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87CE0F1B-3FAB-4FDA-A5CD-6385208E13C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87CE0F1B-3FAB-4FDA-A5CD-6385208E13C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F91D6823-8326-4C03-8B50-97AA60678858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F91D6823-8326-4C03-8B50-97AA60678858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F91D6823-8326-4C03-8B50-97AA60678858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F91D6823-8326-4C03-8B50-97AA60678858}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

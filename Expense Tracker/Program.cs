@@ -1,4 +1,4 @@
-using Expense_Tracker.Models;
+using Expense_Tracker.DbContext;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,9 +6,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("TrackerDb"));
+    // for  PgAdmin 
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DevConnection"));
+    
+    // SQL Server 
+    
+   // options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    
 });
 var app = builder.Build();
 
@@ -20,16 +28,16 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
-app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
+app.MapStaticAssets();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}")
+    .WithStaticAssets();
+
 
 app.Run();
-
